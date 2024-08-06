@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Redirect</title>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            // Array of URLs
+            var urls = [
+                "https://www.youtube.com/watch?v=QyFcl_Fba-k",
+                "https://www.youtube.com/watch?v=mJ-qvsxPHpY",
+                "https://www.youtube.com/watch?v=e5AwNU3Y2es",
+                // Add more URLs as needed
+            ];
+            
+            // Function to select a random URL
+            function getRandomUrl() {
+                return urls[Math.floor(Math.random() * urls.length)];
+            }
+            
+            // Redirect to a random URL
+            window.location.href = getRandomUrl();
+        });
+    </script>
+</head>
+<body>
+    <p>Redirecting...</p>
+</body>
+</html>
